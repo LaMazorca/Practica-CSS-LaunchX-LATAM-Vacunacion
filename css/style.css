@@ -556,13 +556,14 @@ section{
 
 #contactEmergency .contenido{
     position: relative;
+    height: 50%;
 }
 
 #contactEmergency .achicar{
     position: absolute;
     bottom: 0;
     left: 0;
-    transform: translateY(-15%);
+    transform: translateY(-50%);
 }
 
 #contactEmergency .sinPadingDerecha{
