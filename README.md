@@ -15,19 +15,21 @@ Practica del Modulo CSS de LaunX-LATAM
 ## Comentarios
 En la sección de preparación, hay más texto pero lo tengo con display none, porque se puede generar un despliegue por medio de javaScript
 
-
-`.cuerpo-acordeon{
+```html
+.cuerpo-acordeon{
     padding: 2rem 1rem;
     display: none;
     border: 0.1rem solid var(--azul1);
-}`
+}
+```
 
 
 Si lo quitan desde el inspector se puede ver la informción que tiene, igual ya tiene estilos
 
-`.cuerpo-acordeon{
+```html
+.cuerpo-acordeon{
     padding: 2rem 1rem;
     /*display: none;*/
     border: 0.1rem solid var(--azul1);
 }
-`
+```
