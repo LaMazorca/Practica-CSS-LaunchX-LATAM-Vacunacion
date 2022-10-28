@@ -5,7 +5,7 @@ Practica del Modulo CSS de LaunX-LATAM
 
 ## Les dejo el link
 
-***[Aqui](https://lamazorca.github.io/Practica-CSS-LaunchX-LATAM-Vacunacion/)***
+***![Aqui](https://lamazorca.github.io/Practica-CSS-LaunchX-LATAM-Vacunacion/)***
 
 ---
 
