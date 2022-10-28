@@ -24,7 +24,7 @@ En la sección de preparación, hay más texto pero lo tengo con display none, p
 ```
 
 
-Si lo quitan desde el inspector se puede ver la informción que tiene, igual ya tiene estilos
+Si lo quitan desde el inspector se puede ver la información que tiene, igual ya tiene estilos
 
 ```css
 .cuerpo-acordeon{
