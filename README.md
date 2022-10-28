@@ -1,2 +1,2 @@
-# Practica-CSS-LaunchX-LATAM-Vacunaci-n-
+# Practica-CSS-LaunchX-LATAM-Vacunacion-
 Practica del Modulo CSS de LaunX-LATAM
