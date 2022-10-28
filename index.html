@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vacunación Covid-19</title>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="../Vacunación - Launch X/css/normalize.css">
+        <link rel="stylesheet" href="../Vacunación - Launch X/css/style.css">
+        <script src="https://kit.fontawesome.com/9f924ee51c.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header class="cabecera fondo">
+        <div class="container">
+                    <a href="index.html" class="link-logo">
+                        <img src="../Vacunación - Launch X/images/Vacunación Covid-19.png" alt="Logo de vacunación Covid-19" class="logo" width="500" height="500">
+                    </a>
+                    <nav class="menu">
+                        <a href="data.html">Datos</a>
+                        <a href="education.html">Educación</a>
+                        <a href="news.html">Noticias</a>
+                        <a href="regulation.html">Regulación</a>
+                        <a href="myth.html" target="_blank">Rompiendo mitos</a>
+                    </nav>
+        </div>
+    </header>
+    <main>
+        <section id="banner">
+            <div class="container">
+                <div class="fila columna-100">
+                    <div class="division">
+                        <div class="contenedorRect orden sinPading columna-50">
+                            <img src="../Vacunación - Launch X/images/bannerVacunación.jpg" alt="Agujas, jeringas, cubrebocas y medicina contra el Covid-19 en fondo azul" width="4160" height="6240">
+                        </div>
+                        <div class="izquierda contenido padingGrande columna-50">
+                            <h1>Luchemos contra el virus con las Vacunas</h1>
+                            <p>
+                            Paremos esta pandemia, aniquilando el virus con la vacunación, no dejes que tú y tu familia se contagien
+                            <ul>
+                                <li><i class="fa-solid fa-star"></i> Mejor protección</li>
+                                <li><i class="fa-solid fa-shield-virus"></i> Selecciona tu vacuna</li>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="calendario">
+                        <h3><i class="fa-solid fa-clock"></i> Decide tu vacunación</h3>
+                            <form action="registro.php" class="form" method="post">
+                                <table>
+                                    <tr>
+                                        <th><label for="lugar"><i class="fa-solid fa-location-dot"></i> Lugar</label></th>
+                                        <th><label for="fecha"><i class="fa-solid fa-calendar"></i> Fecha</label></th>
+                                        <th><label for="vacuna"><i class="fa-solid fa-syringe"></i> Tipo de Vacuna</label></th>
+                                    </tr>
+                                    <tr>
+                                        <td><select name="lugar" id="lugar" value="lugar" required class="formBloque">
+                                            <option value="militar">Hospital Militar</option>
+                                            <option value="siglo" selected>Centro de Convenciones Siglo 21</option>
+                                            <option value="general">Hospital General "Dr. Agustín O'horán"</option>
+                                        </select></td>
+                                        <td><input type="date" id="fecha" name="fecha" required class="formBloque"></td>
+                                        <td>
+                                            <select name="vacuna" id="vacuna" value="vacuna" required class="formBloque">
+                                                <option value="astraZeneca">AstraZeneca</option>
+                                                <option value="sinovac">Sinovac</option>
+                                                <option value="pfizer" selected>Pfizer</option>
+                                                <option value="moderna">Moderna</option>
+                                            </select>
+                                            <input type="submit" value="Enviar" class="btn"></td>
+                                    </tr>
+                                </table>
+                            </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="vacunas">
+            <div class="container">
+                <div class="fila">
+                    <div class="division encojer">
+                            <img src="../Vacunación - Launch X/images/backgroundVacunas.png" alt="logo de las marcas de las vacunas de Covid-19" width="1466" height="600">
+                            <div class="contenido padingGrande columna-50">
+                                <h2>¿Por qué debería vacunarme?</h2>
+                                <p>Con el fin de evitar cualquier duda sobre la Vacuna del Covid-19, observar los siguientes 4 beneficios sobre la Vacunación del Covid-19:</p>
+                            </div>
+                    </div>
+                    <div class="fila achicar">
+                        <div class="columna-50 padingGrande">
+                            <div class="contenedorCuadrado">
+                                <i class="fa-solid fa-arrows-turn-to-dots"></i>
+                                <h3>Minimiza la propagación del virus</h3>
+                                <p>
+                                    La vacunación ha demostrado ser efectiva para prevenir el contagio de  infecciones por Coronavirus 
+                                </p>
+                            </div>
+                        </div>
+                        <div class="columna-50 padingGrande">
+                            <div class="contenedorCuadrado">
+                                <i class="fa-solid fa-shield-virus"></i>
+                                <h3>Formación de anticuerpos</h3>
+                                <p>
+                                    La vacuna de Covid-19 provee ayuda para la generación de anticuerpos para que responda el sistema inmunológico
+                                </p>
+                            </div>
+                        </div>
+                        <div class="columna-50 padingGrande">
+                            <div class="contenedorCuadrado">
+                                <i class="fa-solid fa-users"></i>
+                                <h3>Portección a las personas cercanas</h3>
+                                <p>
+                                    Los beneficios de la Vacunación del Covid-19 son que la vacuna también ayuda a conseguir proteger a las personas cercanas a nosotros
+                                </p>
+                            </div>
+                        </div>
+                        <div class="columna-50 padingGrande">
+                            <div class="contenedorCuadrado">
+                                <i class="fa-solid fa-square-person-confined"></i>
+                                <h3>Creación de inmunidad grupal</h3>
+                                <p>
+                                    La vacunación de Covid-19 es también beneficiosa para la creación de grupo de inmunidad o inmunidad en grupo
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="preparacion">
+            <div class="container">
+                <div class="fila columna-100">
+                    <div class="division">
+                        <div class="contenedorRect columna-50 sinPading">
+                            <img src="../Vacunación - Launch X/images/bannerPreparaciones.jpg" alt="Hombre con bolsa de papel sobre la cabeza" width="4000" height="6000">
+                        </div>
+                        <div class="izquierda contenido padingGrande columna-50">
+                            <div class="columna-100">
+                            <h2>Preparaciones para antes de vacunarse</h2>
+                            <p>El éxito de la vacunación está fuertemente influenciado por la fortaleza del sistema inmunológico del cuerpo. Por lo tanto, hay varias cosas que se pueden intentar realizar para que la vacuna covid-19 funcione:</p>
+                            </div>
+                            <div class="fila">
+                                <div class="columna-100">
+                                    <h3 class="titulo-acordeon"><i class="fa-solid fa-beer-mug-empty izquierda"></i> Evitar bebidas alcoholicas <i class="fa-solid fa-angle-down"></i></h3>
+                                    <div class="cuerpo-acordeon">
+                                        <p>El alcohol destruye las células de nuestro sistema inmunológico que es lo que necesitamos para que la vacuna de Covid-19 funcione
+                                        Y también destruye las células que recubren los pulmones, además de que estudios refieren que el alcohol aumenta la incapacidad del cuerpo de curarse en hasta 24 horas</p>
+                                    </div>
+                                    <h3 class="titulo-acordeon"><i class="fa-solid fa-face-tired izquierda"></i> Evita el estrés <i class="fa-solid fa-angle-down"></i></h3>
+                                    <div class="cuerpo-acordeon">
+                                        <p>El estrés tiene un profundo efecto en la función inmunológica, es más, el estrés prolongado incrementa la producción de cortisol (causante de elevar la presión en el cuerpo) y oxidantes en el cuerpo</p>
+                                    </div>
+                                    <h3 class="titulo-acordeon"><i class="fa-solid fa-apple-whole izquierda"></i> Come más sano <i class="fa-solid fa-angle-down"></i></h3>
+                                    <div class="cuerpo-acordeon">
+                                        <p>Los alimentos ricos en vitamina A (o beta caroteno), vitamina C, vitamina E, vitamina D y antioxidantes además de otros nutrientes, mantienen su sistema inmunológico funcionando a un nivel óptimo</p>
+                                    </div>
+                                    <h3 class="titulo-acordeon"><i class="fa-solid fa-bed izquierda"></i>Duerme lo suficiente <i class="fa-solid fa-angle-down"></i></h3>
+                                    <div class="cuerpo-acordeon">
+                                        <p>La privación del sueño resulta en pobre función inmunológica: disminuye la producción de anticuerpos por vacunas</p>
+                                    </div>
+                                    <h3 class="titulo-acordeon"><i class="fa-solid fa-dumbbell izquierda"></i>Ejercicio o actividad física <i class="fa-solid fa-angle-down"></i></h3>
+                                    <div class="cuerpo-acordeon">
+                                        <p>No se sabe exactamente si el ejercicio incrementa la inmunidad contra ciertas enfermedades o cómo lo hace. Existen varias teorías. Una de estas teorías es: La actividad física puede ayudar a eliminar bacterias de los pulmones y las vías respiratorias. Esto puede reducir las probabilidades de contraer un resfriado, gripe u otras enfermedades.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="contactEmergency">
+            <div class="container">
+                <div class="fila columna-100">
+                    <div class="division">
+                        <div class="contenedorRect orden sinPading columna-100">
+                            <img src="../Vacunación - Launch X/images/bannerContact.jpg" alt="Doctora contestando el teléfono por emergencia" width="4000" height="6000">
+                        </div>
+                        <div class="izquierda contenido padingGrande columna-50">
+                            <h2>Contacto de emergencia</h2>
+                            <p>Comuníquese con uno de los contactos que le ofrecemos a continuación si usted o su familia se sienten mal y tienen síntomas similares al Covid-19, asegúrese también de cuidarse antes de informarnos:</p>
+                        </div>
+                        <div class="fila achicar">
+                            <div class="columna-50 padingGrande sinPadingDerecha">
+                                <div class="contenedorCuadrado ">
+                                    <h3><i class="fa-solid fa-phone"></i> Teléfono</h3>
+                                    <p>021.123.142.14</p>
+                                    <div>
+                                        <a href="tel:021.123.142.14" class="btn">Llama ahora</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="columna-50 padingGrande sinPadingIzquierda sinPadingDerecha">
+                                <div class="contenedorCuadrado">
+                                    <h3><i class="fa-solid fa-comment-dots"></i> Chat</h3>
+                                    <p>021.123.142.14</p>
+                                    <div>
+                                        <a href="josafatjimenezdev.tech/" class="btn">Chatea ahora</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="columna-50 padingGrande sinPadingDerecha">
+                                <div class="contenedorCuadrado">
+                                    <h3><i class="fa-solid fa-video"></i> Video llamada</h3>
+                                    <p>021.123.142.14</p>
+                                    <div>
+                                        <a href="josafatjimenezdev.tech/" class="btn">Video Chatea ahora</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="columna-50 padingGrande sinPadingIzquierda sinPadingDerecha">
+                                <div class="contenedorCuadrado">
+                                    <h3><i class="fa-solid fa-envelope"></i> Email</h3>
+                                    <p>021.123.142.14</p>
+                                    <div>
+                                        <a href="mailto:josafatjimenezdev.tech/" class="btn">Email ahora</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> 
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <div class="fila">
+                <div class="columna acomodo">
+                    <div class="columna-25">
+                        <h2>Vacunación Covid-19</h2>
+                        <p>Nuestro objetivo es ayudar al mundo a ser libre de la pandemia</p>
+                    </div>
+                    <div class="columna-25">
+                        <h2>Sobre nosotros</h2>
+                        <a href="#">Sobre nosotros</a>
+                        <a href="#">Caracteristicas</a>
+                        <a href="#">Noticias y Blog</a>
+                    </div>
+                    <div class="columna-25">
+                        <h2>Compañía</h2>
+                        <a href="#">¿Como trabajamos?</a>
+                        <a href="#">Capital</a>
+                        <a href="#">Seguridad</a>
+                    </div>
+                    <div class="columna-25">
+                        <h2>Soporte</h2>
+                        <a href="#">FAQs</a>
+                        <a href="#contactEmergency">Centro de soporte</a>
+                        <a href="#contactEmergency">Contactanos</a>
+                    </div>
+                    <div class="pie acomodo">
+                        <div class="container">
+                            <div class="fila">
+                                <div class="columna columna-33">
+                                    <p>&#64; 2022 Vacunación Covid-19. Todos los derechos reservados</p>
+                                </div>
+                                <div class="columna columna-33">
+                                    <a href="#">Terminos y condiciones</a>
+                                </div>
+                                <div class="columna columna-33">
+                                    <a href="#">Política de privacidad</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

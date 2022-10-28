@@ -1,0 +1,621 @@
+*{
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+    --azul1:#021740;
+    --azul2:#9BB8F2;
+    --azul3:#0E3659;
+    --azul4:#5888A6;
+    --cafe:#594642;
+}
+
+body{
+    color: var(--azul4);
+    font-size: 1.6rem;
+}
+
+footer{
+    bottom: -4rem;
+    background-color: var(--azul4);
+}
+
+footer div{
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+footer h2{
+    color: var(--azul1);
+}
+
+footer p,
+footer a{
+    color: var(--azul3);
+}
+
+footer .acomodo{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+footer .columna.acomodo a{
+    display: flex;
+    justify-content: center;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+}
+
+footer .pie{
+    padding-top: 5rem;
+    padding-bottom: 1rem;
+    font-size: 1.6rem;
+}
+
+a{  /*Es necesario para poder utilizar transform: scale() en los a*/
+    display: inline-block;
+    text-decoration: none;
+}
+
+i{
+    color: var(--cafe);
+}
+
+section{
+    position: relative;
+}
+
+.container{
+    width: 100%;
+    padding: 0 1.6rem;
+    margin: 0 auto;
+}
+
+.cabecera{
+    padding-top: 1.6rem;
+    padding-bottom: 1.6rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+    transition: all 0.5s ease;
+}
+
+.cabecera .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 4rem;
+    padding-right: 4rem;
+}
+
+.cabecera.fondo{
+    background-color: rgba(255, 255, 255, .8);
+}
+
+.cabecera.fondo .link-logo .logo{
+    width: 5rem;
+}
+
+.cabecera .menu a{
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    color: var(--cafe);
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 0.10rem; 
+    word-spacing: 0.25rem; 
+    transition: all 0.5s ease;
+}
+
+.cabecera .menu a:hover{
+    transform: scale(1.1);
+    color: #fff;
+    background-color: var(--azul4);
+    border-radius: .6rem;
+    border-style: solid;
+    border-width: .8rem;
+    border-color: var(--azul4);
+}
+
+.cabecera .link-logo{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.cabecera .link-logo .logo{
+    width: 8.8rem;
+    height: auto;
+    transition: all 0.5s ease;
+}
+
+.cabecera .link-logo:hover .logo{
+    transform: scale(1.2);
+}
+
+.cabecera img{
+    border-radius: 45%;
+}
+
+.fila{
+    margin-left: -1.6rem;
+    margin-right: -1.6rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.division{
+    margin: 0;
+    padding: 0;
+}
+
+.columna{
+    padding-left: 1.6rem;
+    padding-right: 1.6rem;
+}
+
+.columna-100{
+    width: 100%;
+}
+
+.columna-50{
+    width: 50%;
+}
+
+.columna-33{
+    width: 33.33%;
+}
+
+.columna-25{
+    width: 25%;
+}
+
+.empujar-33{
+    margin-left: 33.33%;
+}
+
+.contenedorRect{
+    position: relative;
+    width: 56.25%;
+    padding-bottom: 100%;
+}
+
+.contenedorRect img{
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+    object-position: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.padingGrande{
+    padding: 4rem;
+}
+
+.sinPading{
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.orden{
+    order: 2;
+}
+
+.derecha{
+    text-align: right;
+}
+
+.izquierda{
+    text-align: left;
+}
+
+.titulo-acordeon{
+    cursor: pointer;
+    padding: 1rem;
+    padding-right: 4rem;
+    position: relative;
+    margin-top: 0.5rem;
+    margin-bottom: 0%;
+    border-top-right-radius: 0.5rem;
+    border-top-left-radius: 0.5rem;
+    box-shadow: .2rem .2rem .5rem var(--cafe);
+    box-sizing: border-box;
+}
+
+.titulo-acordeon i{
+    position: absolute;
+    font-size: 2rem;
+    right: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    padding-right: 1rem;
+    margin-right: 1rem;
+    margin-left: 1rem;
+    padding-left: 1rem;
+}
+
+.cuerpo-acordeon{
+    padding: 2rem 1rem;
+    display: none;
+    border: 0.1rem solid var(--azul1);
+}
+
+#banner{
+    height: 100vh;
+    left: 0;
+    right: 0;
+}
+
+#banner .fila{
+    margin-left: 0;
+    margin-right: 0;
+    display: inline-block;
+}
+
+#banner .container{
+    padding: 0;
+}
+
+#banner .container h1{
+    font-size: 4rem;
+    color: var(--azul1);
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+#banner .container p{
+    font-size: 1.6rem;
+    color: var(--azul4);
+    line-height: 1.5;
+    margin: 0; 
+}
+
+#banner .container i{
+    font-size: 2.5rem;
+}
+
+#banner img{
+    object-fit: fill;
+    object-position: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#banner .division{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#banner .contenido{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    transform: translateY(-100%);
+}
+
+#banner .contenido li{
+    list-style: none;
+}
+
+#banner .calendario{
+    position: absolute;
+    border-radius: 1rem;
+    background-color: rgba(255, 255, 255, .8);
+    box-shadow: .8rem .8rem 1.6rem var(--cafe);
+    top: 65%;
+    left: 25%;
+}
+
+#banner .calendario h3{
+    margin: 1rem;
+    padding: 1rem;
+    text-align: center;
+    font-size: 2rem;
+}
+
+#banner .calendario .form{
+    display: block;
+    margin: 1rem;
+    padding: 1rem;
+    box-sizing: border-box;
+}
+
+#banner .calendario .form option{
+    color: var(--azul1);
+}
+
+#banner .calendario .form label{
+    margin: 1rem;
+    padding: 1rem;
+    font-size: 1.8rem;
+    font-weight: 300;
+}
+
+#banner .calendario .form .formBloque{
+    height: 4rem;
+    padding: 1rem;
+    margin: 1rem;
+    border: none;
+    color: var(--azul1);
+    font-weight: 900;
+    border-radius: 0.75rem;
+    font-size: 1.6rem;
+    cursor: pointer;
+    border: none;
+    background: none;
+}
+
+#banner .calendario .form .formBloque:focus{
+    background   : rgba(0,0,0,.1);
+    border-radius: 5px;
+}
+
+#banner .calendario .form .btn{
+    color: #fff;
+    background-color: var(--azul4);
+    border-radius: .6rem;
+    border-style: solid;
+    border-width: .8rem;
+    border-color: var(--azul4);
+    cursor: pointer;
+    transition: all .5s ease;
+}
+
+#banner .calendario .form .btn:hover{
+    transform: scale(1.1);
+}
+
+#vacunas{
+    background-color: #fff;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#vacunas i{
+    font-size: 3.5rem;
+}
+
+#vacunas img{
+    filter: grayscale(1);
+    opacity: .2;
+    width: 100%;
+    height: 50%;
+    padding: 0;
+    margin: 0;
+}
+
+#vacunas .contenido{
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+#vacunas div .encojer{
+    width: 100%;
+    height: 50%;
+}
+
+#vacunas div .achicar{
+    margin-right: 0;
+}
+
+#vacunas .container h2{
+    font-size: 4rem;
+    color: var(--azul1);
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+#vacunas .container p{
+    font-size: 1.6rem;
+    color: var(--azul4);
+    line-height: 1.5;
+    margin: 0; 
+}
+
+#vacunas .contenedorCuadrado{
+    border-radius: .6rem;
+    cursor: pointer;
+    padding: 4rem;
+    margin: -1rem;
+    transition: all .5s ease;
+    text-align: center;
+    align-content: center;
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 15%;
+}
+
+#vacunas .contenedorCuadrado:hover{
+    box-shadow: .8rem .8rem 1.6rem var(--cafe);
+}
+
+#vacunas .contenedorCuadrado h3{
+    color: var(--azul1);
+}
+
+#vacunas .contenedorCuadrado p{
+    color: var(--azul4);
+}
+
+#preparacion .fila{
+    margin-left: 0;
+    margin-right: 0;
+}
+
+#preparacion .container{
+    padding: 0;
+}
+
+#preparacion .container h2{
+    font-size: 4rem;
+    color: var(--azul1);
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+#preparacion .container h3{
+    font-size: 2rem;
+    color: var(--azul1);
+    text-align: center;
+}
+
+#preparacion .container p{
+    font-size: 1.6rem;
+    color: var(--azul4);
+    line-height: 1.5;
+    margin-top: .5rem;
+    margin-bottom: .5rem;
+}
+
+#preparacion .container i.izquierda{
+    font-size: 2rem;
+    left: 0;
+    padding-right: 1rem;
+    margin-right: 1rem;
+    margin-left: 1rem;
+    padding-left: 1rem;
+}
+
+#preparacion img{
+    object-fit: fill;
+    object-position: center;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#preparacion .division{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#contactEmergency .fila{
+    margin-left: 0;
+    margin-right: 0;
+}
+
+#contactEmergency .container{
+    padding: 0;
+}
+
+#contactEmergency .container h2{
+    font-size: 4rem;
+    color: var(--azul1);
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+#contactEmergency .container h3{
+    font-size: 2rem;
+    color: var(--azul1);
+}
+
+#contactEmergency .container p{
+    font-size: 1.6rem;
+    color: var(--azul4);
+    line-height: 1.5;
+    margin-top: .5rem;
+    margin-bottom: .5rem;
+}
+
+#contactEmergency .container i{
+    font-size: 2.5rem;
+}
+
+#contactEmergency img{
+    object-fit: fill;
+    object-position: center;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#contactEmergency .division{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#contactEmergency .contenido{
+    position: relative;
+}
+
+#contactEmergency .achicar{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform: translateY(-15%);
+}
+
+#contactEmergency .sinPadingDerecha{
+    padding-right: 0;
+}
+
+#contactEmergency .sinPadingIzquierda{
+    padding-left: 0;
+}
+
+#contactEmergency .contenedorCuadrado{
+    border-radius: .6rem;
+    cursor: pointer;
+    transition: all .5s ease;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    width: 50%;
+    padding: 1rem;
+}
+
+#contactEmergency .contenedorCuadrado:hover{
+    box-shadow: .8rem .8rem 1.6rem var(--cafe);
+}
+
+#contactEmergency .contenedorCuadrado h3{
+    color: var(--azul1);
+    font-size: 1.6rem;
+}
+
+#contactEmergency .contenedorCuadrado p{
+    color: var(--azul4);
+}
+
+#contactEmergency .contenedorCuadrado a{
+    color: var(--azul1);
+    font-size: 2rem;
+    font-weight: 900;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+#contactEmergency a.btn{
+    color: #fff;
+    background-color: var(--azul4);
+    border-radius: .6rem;
+    border-style: solid;
+    border-width: .8rem;
+    border-color: var(--azul4);
+    cursor: pointer;
+    transition: all .5s ease;
+}
+
+#contactEmergency a.btn:hover{
+    transform: scale(1.1);
+}
