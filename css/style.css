@@ -51,9 +51,10 @@ footer .columna.acomodo a{
 }
 
 footer .pie{
-    padding-top: 5rem;
-    padding-bottom: 1rem;
     font-size: 1.6rem;
+    font-weight: 900;
+    background-color: var(--cafe);
+    width: 100%;
 }
 
 a{  /*Es necesario para poder utilizar transform: scale() en los a*/
@@ -123,6 +124,10 @@ section{
     border-style: solid;
     border-width: .8rem;
     border-color: var(--azul4);
+}
+
+.cabecera i.hamb{
+    display: none;
 }
 
 .cabecera .link-logo{
@@ -324,10 +329,11 @@ section{
     padding: 1rem;
     text-align: center;
     font-size: 2rem;
+    color: var(--azul1);
 }
 
 #banner .calendario .form{
-    display: block;
+    display: flex;
     margin: 1rem;
     padding: 1rem;
     box-sizing: border-box;
@@ -371,6 +377,9 @@ section{
     border-width: .8rem;
     border-color: var(--azul4);
     cursor: pointer;
+    width: 100%;
+    height: 100%;
+    transform: translateY(50%);
     transition: all .5s ease;
 }
 
@@ -455,6 +464,7 @@ section{
 #preparacion .fila{
     margin-left: 0;
     margin-right: 0;
+    display: block;
 }
 
 #preparacion .container{
@@ -511,6 +521,10 @@ section{
     margin-right: 0;
 }
 
+#contactEmergency img{
+    padding-bottom: 0;
+}
+
 #contactEmergency .container{
     padding: 0;
 }
@@ -537,15 +551,6 @@ section{
 
 #contactEmergency .container i{
     font-size: 2.5rem;
-}
-
-#contactEmergency img{
-    object-fit: fill;
-    object-position: center;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
 }
 
 #contactEmergency .division{
@@ -619,4 +624,221 @@ section{
 
 #contactEmergency a.btn:hover{
     transform: scale(1.1);
+}
+
+@media (min-width:1200px){
+
+}
+
+@media (max-width: 1199px){
+
+}
+
+@media (max-width:991px){
+
+}
+
+@media (max-width:767px){
+    footer .pie{
+        padding: 0;
+        margin: 0;
+    }
+
+    footer a,
+    footer p{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: .5rem;
+        margin: 0;
+        font-size: 1.4rem;
+    }
+
+    footer h2{
+        font-size: 2rem;
+    }
+
+    footer .padingGrande{
+        padding: 0;
+    }
+
+    .fila{
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .container{
+        margin: 0;
+        padding: 0;
+    }
+
+    .columna{
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+   .columna-100-mb{
+        width: 100%;
+   }
+
+   .padingGrande{
+        padding: 2rem;
+   }
+
+   .contenedorRect{
+        position: relative;
+        width: 100%;
+        padding-bottom: 0;
+   }
+
+   .contenedorRect img{
+        position: relative;
+   }
+
+   .titulo-acordeon i {
+        padding-right: 0; 
+        margin-right: 0; 
+        margin-left: 0;
+    }
+
+    .cabecera{
+        width: 100%;
+    }
+
+    .cabecera .menu a{
+       display: none;
+    }
+
+    .cabecera i.hamb{
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
+        color: var(--cafe);
+        font-size: 1.2rem;
+        display: flex;
+        padding-left: 4rem;
+        padding-right: 4rem;
+    }
+
+    #banner{
+        height: 100%;
+        width: 100%;
+    }
+
+    #banner .calendario{
+        position: relative;
+        top: 0;
+        left: 0;
+    }
+
+    #banner .division {
+        display: inline-block;
+    }
+    
+    #banner .contenido {
+        transform: none;
+        width: 100%;
+        height: auto;
+    }
+
+    #banner img{
+        position: relative;
+        top: 0;
+    }
+
+    #banner .contenedorRect{
+        padding-top: 0;
+    }
+
+    #banner .container h1{
+        font-size: 3rem;
+        text-align: center;
+    }
+
+    #banner .container p {
+        text-align: center;
+    }
+
+    #vacunas .contenedorCuadrado {
+        padding: 0;
+        margin: 0;
+        padding-bottom: 0;
+    }
+
+    #vacunas .container h2 {
+        font-size: 3rem;
+        text-align: center;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    #vacunas .container p {
+        text-align: center;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+
+   #preparacion .division{
+        display: inline-block;
+   }
+
+   #preparacion .container h2{
+        font-size: 3rem;
+        text-align: center;
+   }
+
+   #preparacion .container h3 {
+        padding-right: 1rem;
+    }
+
+   #preparacion .container p{
+        font-size: 1.6rem;
+        text-align: center;
+        margin-bottom: 1rem;
+        margin-top: 1rem;
+   }
+
+   #preparacion .container i{
+        font-size: 1.6rem;
+   }
+
+   #preparacion .container i.izquierda {
+        font-size: 1.6rem;
+        margin-left: 0;
+    }
+
+   #contactEmergency .achicar{
+        position: relative;
+        transform: translate(0%);
+   }
+
+   #contactEmergency .contenido {
+        position: relative;
+        height: auto;
+        text-align: center;
+   }
+
+   #contactEmergency .division{
+        display: inline-block;
+   }
+
+   #contactEmergency .contenedorCuadrado {
+        width: 100%;
+        height: auto;
+        padding: 0;
+        bottom: 0;
+    }
+
+    #contactEmergency .contenedorCuadrado a{
+        padding-top: .5rem;
+        padding-bottom: .5rem;
+    }
+
+    #contactEmergency .container h2{
+        font-size: 3rem;
+    }
+
+    #contactEmergency .container p,
+    #contactEmergency .contenedorCuadrado a {
+        font-size: 1.3rem;
+    }
 }
